@@ -34,11 +34,11 @@ export class PostService {
       return this.http.get<BlogPost[]>(
         `${this.apiUrl}/api/posts?page=${page}&perPage=${perPage}&category=${category}`
       );
-    } else {
-      return this.http.get<BlogPost[]>(
-        `${this.apiUrl}/api/posts?page=${page}&perPage=${perPage}`
-      );
     }
+    
+    return this.http.get<BlogPost[]>(
+      `${this.apiUrl}/api/posts?page=${page}&perPage=${perPage}`
+    );
   }
 
   getPostById(id): Observable<BlogPost> {
@@ -49,8 +49,8 @@ export class PostService {
     return this.http.get<any>(`${this.apiUrl}/api/categories`);
   }
 
-  getTags(): Observable<String[]> {
-    return this.http.get<String[]>(`${this.apiUrl}/api/tags`);
+  getTags(): Observable<string[]> {
+    return this.http.get<string[]>(`${this.apiUrl}/api/tags`);
   }
 
   newPost(post: BlogPost): Observable<any> {

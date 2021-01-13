@@ -5,7 +5,7 @@
  * distributed to other students.
  *
  * Name: Minh To Student ID: 125526186 Date: 12 Aug 20
- *
+ * Online link: https://blog-for-vercel.vercel.app/
  ********************************************************************************/
 
 import { Component } from '@angular/core';

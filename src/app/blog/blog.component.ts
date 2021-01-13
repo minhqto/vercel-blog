@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { BlogPost } from '../../blogpost';
-//import blogData from '../../blogData.json';
 import { PostService } from '../post.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BlogComponent implements OnInit {
   blogPosts: Array<BlogPost>;
-  page: number = 1;
+  page = 1;
   tag: String = null;
   category: String = null;
   querySub: any;

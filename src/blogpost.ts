@@ -10,6 +10,6 @@ export class BlogPost {
   comments: Array<Comment>;
   category: string;
   tags: Array<string>;
-  isPrivate: Boolean;
+  isPrivate: boolean;
   views: number;
 }
